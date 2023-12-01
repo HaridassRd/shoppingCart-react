@@ -1,38 +1,153 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchbox{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: end;
+  margin: 20px;
+}
+.searchbox label{
+  padding: 5px;
+}
+.header h1{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.path img{
+width: 40px;
+height: 40px;
+}
+.cartcount {
+  position: relative;
+}
+.cartcount span{
+  position: absolute;
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(2, 15, 2);
+  right: 14px;
+  background-color: rgb(245, 249, 252) ;
+  border-radius: 50%;
+  }
+.header span{
+padding: 3px 10px;
+margin: 0px 10px;
+font-style: italic;
+background-color: black;
+border-radius: 50%;
+color: white;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.list{
+  display: flex ;
+  margin: 40px 10px;
+  background-color: black;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+.list img{
+  border-radius: 50%;
+}
+.list ul{
+  display: flex;
+  gap: 29px;
+  justify-content: center;
+  align-items: center;
+}
+.list a {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.datas {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: bisque;
+  text-align: center;
+}
+.active {
+  background-color: yellowgreen;
+  border-radius: 10%;
+}
+.listItem{
+  padding: 25px;
+}
+.items{
+  margin: 10px;
+  background-color: blue;
+}
+.datacount{
+  background-color: rgb(111, 111, 192);
+  max-width: fit-content;
+  padding: 5px 20px;
+  margin: 0px 10px;
+}
+.addCart {
+text-align: center;
+}
+.content{
+  display: flex;
+  width: 20rem;
+  height: 10rem;
+  padding: 25px;
+  align-items: center;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.popup_container{
+  background-color: rgb(240, 156, 156);
+  text-align: end;
+  padding: 0px 10px;
+}
+.popup_container span {
+  cursor: pointer;
+}
+.container {
+  background-color: black;
+  width: 100%;
+}
+.msg {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.msg p {
+  font-size: medium;
+  font-style: italic;
+}
+.delbtn {
+text-align: center;
+}
+.delbtn button {
+  cursor: pointer;
+}
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media Only screen and (max-width: 1260px){
+  .app {
+    width: fit-content;
   }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+.datas {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: bisque;
+  text-align: center;
+}
+}
+@media only screen and (max-width: 600px) {
+  .datas {
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color: bisque;
+    text-align: center;
+  }
+  }
